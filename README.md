@@ -1,1 +1,1 @@
-# Artlogic-Frontend-SEO-exercise-
+# Artlogic-Frontend-SEO-exercise

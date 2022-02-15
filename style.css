@@ -1,0 +1,122 @@
+h1,
+h3 {
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 35px;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button[aria-expanded="false"]::before,
+button[aria-expanded="true"]::before {
+  content: "▼";
+  position: relative;
+  float: right;
+  left: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  margin: 0;
+  margin-top: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 80%;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+dd {
+  margin-left: 2em;
+  margin-right: 3em;
+  padding-bottom: 20px;
+  border-bottom: 0.1px solid rgb(88, 94, 94);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  opacity: 0.6;
+}
+
+dl .desc {
+  margin: 0;
+  margin-top: 3em;
+  margin-right: 6.5em;
+  padding: 0.25em;
+  font-size: 80%;
+  display: none;
+  line-height: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% 100%;
+  flex: 1;
+  height: 100%;
+}
+
+.right-side {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side > h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+#line-break {
+  width: 50px;
+  margin-left: 40px;
+}
+#Questions {
+  color: black;
+}
+
+#Artlogic-title {
+  font-size: 24px;
+}
+#improve-seo {
+  font-size: 50px;
+}
+
+#Questions {
+  font-size: 24px;
+}
+
+/* media queries up for mobile resizing  */
+
+@media only screen and (max-width: 400px) {
+  #improve-seo {
+    font-size: 30px;
+  }
+  dl.faq .desc {
+    margin-right: 0.1em;
+    font-size: 50%;
+  }
+}
